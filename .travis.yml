@@ -17,6 +17,6 @@ before_script:
 - psql -c "create database decide owner decide"
 - python3 manage.py migrate
 script: 
-- python3 manage.py test mixnet
+- python3 manage.py test store
 addons:
   postgresql: "9.6"
